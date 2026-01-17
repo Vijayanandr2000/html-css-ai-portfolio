@@ -221,6 +221,27 @@
             }
         }
 
+        @media(max-width:768px) {
+
+            .timeline::before {
+                left: 15px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                margin-left: 0 !important;
+                padding-left: 45px;
+                padding-right: 15px;
+                text-align: left !important;
+            }
+
+            .timeline-item.left,
+            .timeline-item.right {
+                text-align: left;
+            }
+        }
+
+
         /* -------- Scroll driven animation (pure CSS) -------- */
         @supports (animation-timeline: view()) {
             .timeline {
